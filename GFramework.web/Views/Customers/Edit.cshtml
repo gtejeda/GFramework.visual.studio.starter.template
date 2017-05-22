@@ -1,0 +1,25 @@
+﻿@model $ext_projectname$.application.DTOs.CustomerDTO
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Edit Customer</h2>
+
+@using (Html.BeginForm())
+{
+
+    <div class="container">
+        <div class="col-md-12">
+            <label for="Name">Name</label>
+            @Html.EditorFor(x => x.Name)
+
+            <label for="Name">Is Active</label>
+            @Html.EditorFor(x => x.IsActive)
+
+            <input type="submit" class="btn btn-default" value="Save" />
+        </div>
+
+
+    </div>
+
+}

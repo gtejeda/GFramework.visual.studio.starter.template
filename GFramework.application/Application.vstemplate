@@ -1,0 +1,30 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>GFramework.application</Name>
+    <Description>GFramework application module</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>GFramework.application</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Test01.application.csproj" File="Test01.application.csproj" ReplaceParameters="true">
+      <Folder Name="CustomCommands" TargetFolderName="CustomCommands">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ActivateCustomerCommand.cs">ActivateCustomerCommand.cs</ProjectItem>
+      </Folder>
+      <Folder Name="DTOs" TargetFolderName="DTOs">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CustomerDTO.cs">CustomerDTO.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

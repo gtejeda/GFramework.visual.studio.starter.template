@@ -1,0 +1,35 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
+  <TemplateData>
+    <Name>GFramework Full Solution</Name>
+    <Description>This gets you started with a fully configured GFramework</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>GFrameworkSolution</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+	<ProjectCollection>
+		<ProjectTemplateLink ProjectName="$projectname$.core" CopyParameters="true">
+			GFramework.core\Core.vstemplate
+		</ProjectTemplateLink>
+		<ProjectTemplateLink ProjectName="$projectname$.application" CopyParameters="true">
+			GFramework.application\Application.vstemplate
+		</ProjectTemplateLink>
+		<ProjectTemplateLink ProjectName="$projectname$.business" CopyParameters="true">
+			GFramework.business\Business.vstemplate
+		</ProjectTemplateLink>
+		<ProjectTemplateLink ProjectName="$projectname$.data" CopyParameters="true">
+			GFramework.data\Data.vstemplate
+		</ProjectTemplateLink>
+		<ProjectTemplateLink ProjectName="$projectname$.web" CopyParameters="true">
+			GFramework.web\Web.vstemplate
+		</ProjectTemplateLink>
+	</ProjectCollection>
+  </TemplateContent>
+</VSTemplate>
